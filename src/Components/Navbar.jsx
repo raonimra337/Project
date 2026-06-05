@@ -5,18 +5,19 @@ function Navbar() {
   return (
     <div>
        {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
             <div className="container">
-                <Link to="/">
-                    <img src="src/assets/logo.png" alt="Logo" width="230" />
-                </Link>
-                    <button
+                <div className='pe-5'>
+                    <Link to="/" className=''>
+                        <img src="src/assets/logo.png" alt="Logo" width="220" />
+                    </Link>
+                </div>
+                    
+                <button
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
-                        // aria-controls="navbarNav"
-                        // aria-expanded="false"
                         aria-label="Toggle navigation"
                         >
                         <span className="navbar-toggler-icon"></span>
@@ -24,33 +25,33 @@ function Navbar() {
 
                 <div className="collapse navbar-collapse" id="navbarNav">
 
-                    <ul className="navbar-nav d-flex mx-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
+                    <ul className="navbar-nav">
+                        <li className="nav-item pt-4 pe-5">
+                            <Link className="nav-link text-white" to="/">Home</Link>
                         </li>
                             
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
+                        <li className="nav-item pt-4 pe-5">
+                            <Link className="nav-link text-white" to="/about">About</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/ourservices">Our Services</Link>
+                        <li className="nav-item pt-4 pe-5">
+                            <Link className="nav-link text-white" to="/ourservices">Our Services</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/portfolio">PORTFOLIO</Link>
+                        <li className="nav-item pt-4 pe-5">
+                            <Link className="nav-link text-white" to="/portfolio">PORTFOLIO</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/career">CAREER</Link>
+                        <li className="nav-item pt-4 pe-4">
+                            <Link className="nav-link text-white" to="/career">CAREER</Link>
                         </li>
                         
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/blogs">BLOGS</Link>
+                        <li className="nav-item pt-4 pe-4">
+                            <Link className="nav-link text-white" to="/blogs">BLOGS</Link>
                         </li>
                             
-                        <Link to="/contact us">
-                            <button className='btn btn-success'>Contact Us</button>
+                        <Link to="/contact us" className="pt-2 text-white">
+                            <button className='btn btn-success p-5 pt-3 pb-2 fs-6'>Contact <br />Us</button>
                         </Link>
                     </ul>
 
