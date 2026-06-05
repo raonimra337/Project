@@ -1,6 +1,6 @@
 // import React from 'react'
 
-function Carrer() {
+function OurServices() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Carrer() {
   )
 }
 
-export default Carrer
+export default OurServices

@@ -4,16 +4,30 @@
 // import heroImg from './assets/hero.png'
 import './App.css'
 
+import {Routes, Route} from 'react-router-dom'
+
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
+import OurServices from './Components/OurServices'
+import Portfolio from './Components/Portfolio'
+import Carrer from './Components/Carrer'
+import Blogs from './Components/Blogs'
+import ContactUs from './Components/ContactUs'
+
 function App() {
-  // import {Routes, Route} from 'react-router-dom'
 
   return (
     <>
-      {/* <Routes>
+      <Navbar />
+
+      <Routes>
         <Route path = "/" element = {<Home />} />
-        <Route path = "about" element = {<About />} />
-        <Route path = "contact" element = {<Contact />} />
-      </Routes> */}
+        <Route path = "about" element = {<OurServices />} />
+        <Route path = "contact" element = {<Portfolio />} />
+        <Route path = "contact" element = {<Carrer />} />
+        <Route path = "contact" element = {<Blogs />} />
+        <Route path = "contact" element = {<ContactUs />} />
+      </Routes>
     </>
   )
 }
