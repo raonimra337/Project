@@ -27,31 +27,63 @@ function Navbar() {
 
                     <ul className="navbar-nav">
                         <li className="nav-item pt-4 pe-5">
-                            <Link className="nav-link text-white" to="/">Home</Link>
+                            <Link className="nav-link text-white" to="/">HOME</Link>
                         </li>
                             
-                        <li className="nav-item pt-4 pe-5">
-                            <Link className="nav-link text-white" to="/about">About</Link>
-                        </li>
+                        <li className="nav-item pt-4 pe-4 dropdown">
+                            <Link className="nav-link text-white dropdown-toggle" to="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ABOUT
+                            </Link>
+                            <ul className="dropdown-menu rounded-4 pt-3 pb-3 p-2" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        About Us
+                                    </Link>
 
-                        <li className="nav-item pt-4 pe-5">
-                            <Link className="nav-link text-white" to="/ourservices">Our Services</Link>
-                        </li>
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Our Process
+                                    </Link>
 
-                        <li className="nav-item pt-4 pe-5">
-                            <Link className="nav-link text-white" to="/portfolio">PORTFOLIO</Link>
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Our Partners
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item pt-4 pe-4">
-                            <Link className="nav-link text-white" to="/career">CAREER</Link>
+                            <Link className="nav-link text-white" to="/ourservices">OUR SERVICES</Link>
+                        </li>
+
+                        <li className="nav-item pt-4 pe-4">
+                            <Link className="nav-link text-white" to="/portfolio">PORTFOLIO</Link>
+                        </li>
+
+                        <li className="nav-item pt-4 pe-4 dropdown">
+                            <Link className="nav-link text-white dropdown-toggle" to="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               CAREER
+                            </Link>
+                            <ul className="dropdown-menu rounded-4 pt-3 pb-3 p-2" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Apply Internship
+                                    </Link>
+
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Apply Jobs
+                                    </Link>
+
+                                </li>
+                            </ul>
                         </li>
                         
                         <li className="nav-item pt-4 pe-4">
                             <Link className="nav-link text-white" to="/blogs">BLOGS</Link>
                         </li>
                             
-                        <Link to="/contact us" className="pt-2 text-white">
-                            <button className='btn btn-success p-5 pt-3 pb-2 fs-6'>Contact <br />Us</button>
+                        <Link to="/contact us" className="button pt-2 text-white">
+                            <button className='btn p-5 pt-3 pb-2 fs-6'>Contact <br />Us</button>
                         </Link>
                     </ul>
 

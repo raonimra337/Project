@@ -1,4 +1,17 @@
 .navbar-nav .btn{
   border-radius: 230px;
+   background-color: rgb(28, 192, 28);
+   color: white;
 
+}
+
+.dropdown-menu{
+  background-color: rgb(34, 32, 32)!important;
+}
+.dropdown-item{
+  font-size: 14px;
+}
+
+.dropdown-item:hover{
+  background-color: rgb(20, 19, 19)!important;
 }
