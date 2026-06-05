@@ -7,7 +7,9 @@ function Navbar() {
        {/* Navbar */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                <Link className="navbar-brand" to="/">My Portfolio</Link>
+                <Link to="/">
+                    <img src="src/assets/logo.png" alt="Logo" width="230" />
+                </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -22,7 +24,7 @@ function Navbar() {
 
                 <div className="collapse navbar-collapse" id="navbarNav">
 
-                    <ul className="navbar-nav ms-auto">
+                    <ul className="navbar-nav d-flex mx-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
@@ -30,10 +32,26 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
-                            
+
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact</Link>
+                            <Link className="nav-link" to="/ourservices">Our Services</Link>
                         </li>
+
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/portfolio">PORTFOLIO</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/career">CAREER</Link>
+                        </li>
+                        
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/blogs">BLOGS</Link>
+                        </li>
+                            
+                        <Link to="/contact us">
+                            <button className='btn btn-success'>Contact Us</button>
+                        </Link>
                     </ul>
 
                 </div>

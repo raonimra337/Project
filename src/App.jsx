@@ -10,9 +10,10 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import OurServices from './Components/OurServices'
 import Portfolio from './Components/Portfolio'
-import Carrer from './Components/Carrer'
+import Career from './Components/Career'
 import Blogs from './Components/Blogs'
 import ContactUs from './Components/ContactUs'
+import About from './Components/About'
 
 function App() {
 
@@ -22,11 +23,12 @@ function App() {
 
       <Routes>
         <Route path = "/" element = {<Home />} />
-        <Route path = "about" element = {<OurServices />} />
-        <Route path = "contact" element = {<Portfolio />} />
-        <Route path = "contact" element = {<Carrer />} />
-        <Route path = "contact" element = {<Blogs />} />
-        <Route path = "contact" element = {<ContactUs />} />
+        <Route path = "about" element = {<About />} />
+        <Route path = "ourservices" element = {<OurServices />} />
+        <Route path = "portfolio" element = {<Portfolio />} />
+        <Route path = "career" element = {<Career />} />
+        <Route path = "blogs" element = {<Blogs />} />
+        <Route path = "contactus" element = {<ContactUs />} />
       </Routes>
     </>
   )
