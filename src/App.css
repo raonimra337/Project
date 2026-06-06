@@ -1,17 +1,23 @@
 .navbar-nav .btn{
   border-radius: 230px;
-   background-color: rgb(28, 192, 28);
-   color: white;
+  background-color: rgb(28, 192, 28);
+  color: white;
 
 }
 
 .dropdown-menu{
-  background-color: rgb(34, 32, 32)!important;
+  background-color: rgb(48, 40, 40)!important;
 }
 .dropdown-item{
   font-size: 14px;
+  border-color: chartreuse!important;
 }
 
 .dropdown-item:hover{
-  background-color: rgb(20, 19, 19)!important;
+  background-color: rgb(46, 37, 37)!important;
+  width: 100px;
+}
+
+.nav-link:hover{
+  color: chartreuse!important;
 }

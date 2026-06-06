@@ -14,7 +14,7 @@ function Navbar() {
                 </div>
                     
                 <button
-                        className="navbar-toggler"
+                        className="navbar-toggler shadow"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
@@ -34,7 +34,8 @@ function Navbar() {
                             <Link className="nav-link text-white dropdown-toggle" to="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ABOUT
                             </Link>
-                            <ul className="dropdown-menu rounded-4 pt-3 pb-3 p-2" aria-labelledby="navbarDropdownMenuLink">
+                            
+                            <ul className="dropdown-menu rounded-4 pt-3 pb-3" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
                                     <Link className="dropdown-item text-white p-2 ps-3" to="/">
                                         About Us
@@ -51,8 +52,34 @@ function Navbar() {
                             </ul>
                         </li>
 
-                        <li className="nav-item pt-4 pe-4">
-                            <Link className="nav-link text-white" to="/ourservices">OUR SERVICES</Link>
+                        <li className="nav-item pt-4 pe-4 dropdown">
+                            <Link className="nav-link text-white dropdown-toggle" to="/about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                OUR SERVICES
+                            </Link>
+                            
+                            <ul className="dropdown-menu rounded-4 pt-3 pb-3" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Architecture
+                                    </Link>
+
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Interior Design
+                                    </Link>
+
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Construction
+                                    </Link>
+
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Building Sustainability
+                                    </Link>
+
+                                    <Link className="dropdown-item text-white p-2 ps-3" to="/">
+                                        Smart Building Technologies
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
 
                         <li className="nav-item pt-4 pe-4">
@@ -86,6 +113,8 @@ function Navbar() {
                             <button className='btn p-5 pt-3 pb-2 fs-6'>Contact <br />Us</button>
                         </Link>
                     </ul>
+
+                    
 
                 </div>
             </div>
