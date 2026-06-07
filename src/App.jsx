@@ -7,7 +7,8 @@ import './App.css'
 // import {Routes, Route} from 'react-router-dom'
 
 // import Navbar from './Components/Navbar'
-import Home from './Components/Home'
+// import Home from './Components/Home'
+import Navbar from './Components/Navbar'
 // import OurServices from './Components/OurServices'
 // import Portfolio from './Components/Portfolio'
 // import Career from './Components/Career'
@@ -31,7 +32,7 @@ function App() {
       <Route path = "contactus" element = {<ContactUs />} />
       </Routes> */}
 
-      <Home />
+      <Navbar />
     </>  
   )
 }
