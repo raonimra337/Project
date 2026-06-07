@@ -1,15 +1,15 @@
 // import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import Carousel from 'react-bootstrap/Carousel'
-import ar1 from '../assets/ar1.png';
-import ar2 from '../assets/ar2.png';
+// import Carousel from 'react-bootstrap/Carousel'
+// import ar1 from '../assets/ar1.png';
+// import ar2 from '../assets/ar2.png';
 
 function Navbar() {
   return (
     <div>
        {/* Navbar */}
-        <nav className="navbar navbar-expand-lg bg-dark fixed-top py-3">
+        <nav className="navbar navbar-expand-lg fixed-top py-3">
             <div className="container">
                 <div className='pe-5'>
                     <Link to="/" className=''>
@@ -122,31 +122,32 @@ function Navbar() {
             </div>
         </nav>
 
-        {/* Carousels */}
-      <Carousel fade controls indicators={false}>
-        <Carousel.Item>
-          <div
-            style={{
-              height: "100vh",
-              backgroundImage: `url(${ar1})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div
-              className="d-flex flex-column justify-content-center align-items-start h-100 text-white ps-5"
-              style={{ background: "rgba(0,0,0,0.4)" }}
-            >
-              <h1 className="display-1 fw-bold">Interior</h1>
-              <h2>Interior Design Studio</h2>
-              <button className="btn btn-outline-light mt-3">
-                Our Services
-              </button>
-            </div>
-          </div>
-        </Carousel.Item>
+        {/* Carousels
+        
+        <Carousel fade controls indicators={false}>
+            <Carousel.Item>
+                <div
+                    style={{
+                        height: "95vh",
+                        backgroundImage: `url(${ar1})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                    }}
+                >
+                    <div
+                        className="d-flex flex-column justify-content-center align-items-start h-100 text-white ps-5"
+                        style={{ background: "rgba(0,0,0,0.4)" }}
+                    >
+                        <h1 className="display-1 fw-bold">Interior</h1>
+                        <h2>Interior Design Studio</h2>
+                        <button className="btn btn-outline-light mt-3">
+                            Our Services
+                        </button>
+                    </div>
+                </div>
+            </Carousel.Item> */}
 
-        <Carousel.Item>
+            {/* <Carousel.Item>
           <div
             style={{
               height: "100vh",
@@ -166,8 +167,8 @@ function Navbar() {
               </button>
             </div>
           </div>
-        </Carousel.Item>
-      </Carousel>
+            </Carousel.Item> */}
+        {/* </Carousel> */}
 
       
     </div>

@@ -1,9 +1,103 @@
 // import React from 'react'
 // import { Carousel } from 'react-bootstrap/Carousel'
 
+import { useState } from "react";
+import ar1 from "../assets/ar1.png";
+import ar2 from "../assets/ar2.png";
+import ar3 from "../assets/ar3.png";
+import ar4 from "../assets/ar4.png";
+
 function Home() {
+
+   const slides = [
+    {
+      image: ar1,
+      title: "Architecture",
+      subtitle: "Modern Architecture",
+      description:
+        "Innovative architectural solutions designed to transform spaces and create lasting value.",
+    },
+    {
+      image: ar2,
+      title: "Interior",
+      subtitle: "Interior Design Studio",
+      description:
+        "Creating beautiful and functional interiors that enhance everyday living.",
+    },
+    {
+      image: ar3,
+      title: "Construction",
+      subtitle: "Building Solutions",
+      description:
+        "Reliable construction services delivering quality and excellence in every project.",
+    },
+    {
+      image: ar4,
+      title: "Sustainability",
+      subtitle: "Sustainable Design",
+      description:
+        "Sustainability focuses on meeting the needs of the present without compromising future generations.",
+    },
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((current + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? slides.length - 1 : current - 1);
+  };
+
   return (
-    <div>
+     <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${slides[current].image})`,
+      }}
+    >
+      <div className="overlay">
+
+        <div className="slide-count">
+          <span>{current + 1}</span>
+          <span>/</span>
+          <span>{slides.length}</span>
+        </div>
+
+        <div className="hero-content">
+          <h1>{slides[current].title}</h1>
+          <h3>{slides[current].subtitle}</h3>
+        </div>
+
+        <div className="hero-right">
+          <p>{slides[current].description}</p>
+
+          <button className="service-btn">
+            Our Services ↗
+          </button>
+        </div>
+
+        <div className="arrows">
+          <button onClick={prevSlide}>❮</button>
+          <button onClick={nextSlide}>❯</button>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    // <div>
       {/* Carousels
       <Carousel fade controls indicators={false}>
         <Carousel.Item>
@@ -52,7 +146,7 @@ function Home() {
           </div>
         </Carousel.Item>
       </Carousel> */}
-    </div>
+    // </div>
   )
 }
 
