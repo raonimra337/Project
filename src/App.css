@@ -1,3 +1,5 @@
+/* Navbar-section */
+
 .navbar-nav .btn{
   border-radius: 230px;
   background-color: rgb(28, 192, 28);
@@ -21,3 +23,10 @@
 .nav-link:hover{
   color: chartreuse!important;
 }
+
+.navbar {
+  background: transparent;
+  z-index: 1000;
+}
+
+/* Navbar-section */
