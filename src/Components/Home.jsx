@@ -5,7 +5,7 @@ import { useState } from "react";
 import ar1 from "../assets/ar1.png";
 import ar2 from "../assets/ar2.png";
 import ar3 from "../assets/ar3.png";
-import ar4 from "../assets/ar4.png";
+// import ar2 from "../assets/ar4.png";
 
 function Home() {
 
@@ -32,7 +32,7 @@ function Home() {
         "Reliable construction services delivering quality and excellence in every project.",
     },
     {
-      image: ar4,
+      image: ar2,
       title: "Sustainability",
       subtitle: "Sustainable Design",
       description:
@@ -85,7 +85,10 @@ function Home() {
 
       </div>
     </section>
+)
+}
 
+export default Home
 
 
 
@@ -98,7 +101,7 @@ function Home() {
 
 
     // <div>
-      {/* Carousels
+    /* Carousels
       <Carousel fade controls indicators={false}>
         <Carousel.Item>
           <div
@@ -145,9 +148,5 @@ function Home() {
             </div>
           </div>
         </Carousel.Item>
-      </Carousel> */}
+      </Carousel> */
     // </div>
-  )
-}
-
-export default Home
