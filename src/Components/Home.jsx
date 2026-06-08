@@ -10,7 +10,7 @@ import A4 from "../assets/A4.png";
  
 function Home() {
   return (
-    <div className='container-fluid m-0 p-0' id='carousel'>
+    <div className='container-fluid m-0 p-0'>
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
         {/* <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -56,7 +56,7 @@ function Home() {
           </div>
 
           <div className="carousel-item">
-          <img src={A2} className="pic w-100" alt="img2" id='pic' />
+          <img src={A2} style={{ height: "800px" }} className="pic w-100" alt="img2" id='pic' />
           
           <div className="carousel-caption">
             <div className="row">
