@@ -33,5 +33,9 @@
 
 
 /* Home */
+.btn:hover{
+  background-color: white!important;
+  color: black!important;
+}
 
 /* Home */
