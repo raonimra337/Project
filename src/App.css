@@ -7,6 +7,11 @@
 
 }
 
+.navbar-nav .btn:hover{
+  background-color: black!important;
+  color: white!important;
+}
+
 .dropdown-menu{
   background-color: rgb(48, 40, 40)!important;
 }
